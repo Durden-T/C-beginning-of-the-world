@@ -1,6 +1,2 @@
 ﻿  源.c
-c:\users\12514\desktop\练习\text\text\源.c(18): warning C4013: “kbhit”未定义；假设外部返回 int
-c:\users\12514\desktop\练习\text\text\源.c(19): warning C4013: “getch”未定义；假设外部返回 int
-c:\users\12514\desktop\练习\text\text\源.c(64): warning C4101: “j”: 未引用的局部变量
-c:\users\12514\desktop\练习\text\text\源.c(163): warning C4101: “k”: 未引用的局部变量
-  text.vcxproj -> C:\Users\12514\Desktop\练习\text\x64\Debug\text.exe
+  text.vcxproj -> D:\code\C-beginning-of-the-world\text\x64\Debug\text.exe
