@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include <stdio.h>//cpp p276 8
 double power(double n, int p);
 int main(void)
 {
@@ -37,5 +37,30 @@ double power(double n, int p)
 	}
 	else
 	pow = 0;
+	return pow;
+}
+
+double power(double n, int p)
+{
+	double pow = 1;
+	int i = 1;
+	int temp;
+	if (n != 0)
+	{
+		if (p != 0)
+		{
+			temp = p;
+			p = abs(p);
+			n*=n;
+			pow = power(n, p);
+
+			if (temp < 0)
+				pow = 1 / pow;
+		}
+		else
+			pow = 1;
+	}
+	else
+		pow = 0;
 	return pow;
 }

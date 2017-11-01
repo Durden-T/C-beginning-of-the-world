@@ -1,0 +1,6 @@
+﻿  Microsoft (R) Incremental Linker Version 14.11.25547.0
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  
+  "/OUT:D:\code\C-beginning-of-the-world\text\x64\Release\text.exe" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST "/MANIFESTUAC:level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG:FULL "/PDB:D:\code\C-beginning-of-the-world\text\x64\Release\text.pdb" /OPT:REF /OPT:ICF "/PGD:D:\code\C-beginning-of-the-world\text\x64\Release\text.pgd" /LTCG:PGOptimize /TLBID:1 /DYNAMICBASE /NXCOMPAT "/IMPLIB:D:\code\C-beginning-of-the-world\text\x64\Release\text.lib" /MACHINE:X64 "x64\Release\函数.obj" 
+  "x64\Release\源.obj" 
+LINK : fatal error LNK1266: 读取检测文件“D:\code\C-beginning-of-the-world\text\x64\Release\text.pgd”时出错；未找到文件

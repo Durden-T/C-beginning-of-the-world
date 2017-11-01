@@ -1,3 +1,2 @@
 ﻿  源.c
-d:\code\c-beginning-of-the-world\text\text\源.c(29): warning C4013: “abs”未定义；假设外部返回 int
   text.vcxproj -> D:\code\C-beginning-of-the-world\text\x64\Debug\text.exe
