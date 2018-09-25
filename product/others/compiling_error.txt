@@ -1,0 +1,9 @@
+D:\code\C-beginning-of-the-world\product\a.cpp: In member function 'std::vector<std::vector<int> > Solution::kSum(std::vector<int>&, int, int)':
+D:\code\C-beginning-of-the-world\product\a.cpp:111:43: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+         if(nums.empty()||k<=0||nums.size()<k)
+                                ~~~~~~~~~~~^~
+D:\code\C-beginning-of-the-world\product\a.cpp:114:11: warning: suggest explicit braces to avoid ambiguous 'else' [-Wparentheses]
+         if(k==1)
+           ^
+c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../libmingw32.a(main.o):(.text.startup+0xa0): undefined reference to `WinMain@16'
+collect2.exe: error: ld returned 1 exit status

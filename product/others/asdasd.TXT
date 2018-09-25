@@ -1,0 +1,80 @@
+
+struct Node;
+typedef struct Node *PtrToNode;
+typedef PtrToNode List;
+typedef PtrToNode Position;
+List Header(List l);
+int IsEmpty(List l);
+int IsLast(Position p, List l);
+Position Find(int x, List l);
+Position FindPrevious(int x, List l);
+void Delete(int x, List l);
+void Insert(int x, List l, Position p);
+void DeleteList(List l);
+
+
+struct Node
+{
+	int element;
+	Position next;
+};
+
+List Header(List l)
+{
+	l->element=0;
+	Position new=malloc(sizeof(struct Node));
+	l->next = new;
+	return l;
+}
+
+int IsEmpty(List l)
+{
+	return l->next==NULL;
+}
+
+int IsLast(Position p, List l)
+{
+	return p->next==NULL;
+}
+
+Position Find(int x, List l)
+{
+	while (l->next && l->next->element !=x)
+		l = l->next;
+	return l->next;
+}
+
+Position FindPrevious(int x, List l)
+{
+	while (l->next && l->next->element!=x)
+		l = l->next;
+	return l;
+}
+
+void Delete(int x, List l)
+{
+	Position p = FindPrevious(x, l);
+	Position t = p->next;
+	if (p->next)//X is found,delete it
+		p->next = t->next;
+}
+
+void Insert(int x, List l, Position p)
+{
+	Position new=malloc(sizeof(struct Node));
+	Position t = p->next;
+	p->next = new;
+	new->next = t;
+	new->element = x;
+}
+
+void DeleteList(List l)
+{
+	Position t;
+	while (l->next)
+	{
+		t = l->next;
+		free(l);
+		l = t;
+	}
+}
