@@ -38,5 +38,7 @@
         "type_traits": "cpp",
         "typeinfo": "cpp"
     },
-    "powermode.enabled": true
+    "powermode.enabled": true,
+    "git.enableSmartCommit": true,
+    "editor.fontFamily": "Microsoft YaHei Mono"
 }
