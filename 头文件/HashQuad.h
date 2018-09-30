@@ -69,8 +69,6 @@ HashTable InitializeTable(int TableSize)
 
 Index Find(ElementType Key, HashTable H)
 {
-    if (H->Count >= H->TableSize / 2)
-        H = Rehash(H);
     Index CurrentPos;
     int CollisionNum;
     CollisionNum = 0;
@@ -88,6 +86,8 @@ Index Find(ElementType Key, HashTable H)
 
 void Insert(ElementType Key, HashTable H)
 {
+    if (H->Count >= H->TableSize / 2)
+        H = Rehash(H);
     Index Pos;
     Pos = Find(Key, H);
     if (H->Cells[Pos].Info != Legitimate)
