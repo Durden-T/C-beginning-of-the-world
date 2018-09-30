@@ -19,15 +19,10 @@ int countPrimes(int n)
     vector<bool> table(n, true);
     table[0] = table[1] = false;
     int limit = sqrt(n);
-    for (int i = 2; i <= limit; i++)
+    for (int i = 2; i <= limit; ++i)
         if (table[i])
             for (int j = i * i; j < n; j += i)
                 table[j] = false;
-    int ans = n > 2 ? 1 : 0;
-    for (int i = 3; i < n; i += 2)
-        if (a[i] == true)
-            ++ans;
-    return ans;
 }
 
 int main(void)
