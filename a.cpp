@@ -27,5 +27,4 @@ static int __initialSetup = [] {
 int main()
 {
     return 0;
-    //fuckasdad 
 }
