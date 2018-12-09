@@ -1,34 +1,19 @@
 #include <iostream>
 #include <string>
 #include <climits>
+#include <set>
 using namespace std;
 
 int main()
 {
-    int a = INT_MIN;
-    cout << sizeof(&a);
+    multiset<int> a;
+    a.insert(3);
+    a.insert(3);
+    a.insert(3);
+    a.erase(3);
+    cout << a.size() << endl;
+    for (int i : a)
+        cout << i << endl;
     system("pause");
     return 0;
-}
-
-void inOrder(TreeNode *root)
-{
-    stack<TreeNode *> S;
-    S.push(root);
-    while (!S.empty())
-    {
-        while (S.top()->left)
-            S.push(S.top()->left);
-        while (!S.empty())
-        {
-            auto cur = S.top();
-            S.pop();
-            helper(cur->val);
-            if (cur->right)
-            {
-                S.push(cur->right);
-                break;
-            }
-        }
-    }
 }
